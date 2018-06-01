@@ -28,11 +28,10 @@
 	const verBlockCount = playgroundHeight / blockSize;
 
 	function bootstrap() {
-		console.log('$f', typeof $f)
 		const frag = $f();
 
-		for (let x = 0; x < hozBlockCount; x++) {
-			for (let y = 0; y < verBlockCount; y++) {
+		for (let y = 0; y < verBlockCount; y++) {
+			for (let x = 0; x < hozBlockCount; x++) {
 				let span = $c('span');
 				span.className = 'block';
 				span.setAttribute('data-x', x);

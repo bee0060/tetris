@@ -1,12 +1,14 @@
 body, span, div {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
 .container {
-	background-color: #123;
+	background-color: #161e27;
 	display: flex;
 	height: 100vh;
+	padding-top: 30px;
 	width: 100vw;
 }
 
@@ -16,13 +18,45 @@ body, span, div {
 	flex-wrap: wrap;
 	height: 700px;
 
-	margin: 30px 0 0 30px;
+	margin: 0 50px 0 30px;
 	width: 500px;
 }
 
 .block {
 	background: white;
-	border: 5px solid #778;
-	height: 10px;
-	width: 10px;
+	border: 2px inset #778;
+	box-sizing: border-box;
+	height: 20px;
+	width: 20px;
+}
+
+.right-panel {
+	background: white;	
+	display: flex;
+	flex-direction: column;
+	height: 700px;
+	padding: 30px;
+	width: 500px;
+}
+
+.preview-dialog {
+	background: #009688;
+	height: 200px;
+	margin-bottom: 50px;
+	width: 100%;
+}
+
+.ctrl-container {
+	align-items: center;
+	background: #009688;
+	display: flex;
+	flex: 1;
+	width: 100%;
+}
+
+.ctrl-container span {
+	background: #dc8d18;
+	margin: 20px;
+	height: 100px;
+	width: 80px;
 }
